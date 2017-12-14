@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alex.week6_sqlitehw.Fragment_Item">
+
+    <EditText
+        android:id="@+id/edtSQL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnDo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtSQL"
+        android:layout_marginTop="12dp"
+        android:text="執行SQL命令"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新增商品"
+        android:layout_below="@+id/btn_arrangebyid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:id="@+id/listview01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnAdd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn_arrangebyid"
+        android:layout_width="60sp"
+
+        android:layout_height="wrap_content"
+        android:text="照id排列" />
+
+    <Button
+        android:id="@+id/btn_arrangebystock"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn_arrangebyid"
+        android:text="照庫存量排列" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="廠商id:"
+        android:layout_alignBaseline="@+id/btn_searchnum"
+        android:layout_alignBottom="@+id/btn_searchnum"
+        android:layout_toRightOf="@+id/btn_arrangebystock"
+        android:layout_toEndOf="@+id/btn_arrangebystock" />
+
+    <EditText
+        android:id="@+id/editText_Searchnum"
+        android:layout_width="30sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtSQL"
+        android:layout_alignBottom="@+id/edtSQL"
+        android:layout_toRightOf="@+id/textView6"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_searchnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜尋"
+        android:textAllCaps="false"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/editText_Searchnum"
+        android:layout_toEndOf="@+id/editText_Searchnum" />
+
+    <Button
+        android:id="@+id/btn_searchall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜尋全部"
+        android:layout_toRightOf="@+id/btn_searchnum" />
+
+
+</RelativeLayout>
